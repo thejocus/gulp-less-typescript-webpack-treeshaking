@@ -3,9 +3,10 @@
 const config = require(`${__dirname}/project.config.json`);
 const path = require('path');
 const rootPath = path.resolve(`${__dirname}/..`);
+const babelWebpack = require("babel-minify-webpack-plugin");
 
 module.exports = {
-    eentry: {
+    entry: {
         'app'       : `${rootPath}/${config.lang.ts.path}/${config.lang.ts.entry}`
     },
 
