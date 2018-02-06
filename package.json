@@ -4,22 +4,11 @@
     "description": "",
     "main": "gulpfile.js",
     "scripts": {
-        "build": "webpack --config webpack.config.js",
-        "build:prod": "webpack --config webpack.config.prod.js"
+        "build": "webpack --config config/webpack.config.js",
+        "build:prod": "webpack --config config/webpack.config.prod.js"
     },
     "author": "",
     "license": "ISC",
-    "paths": {
-        "flatbuildPath": "/",
-        "projectPath": "/",
-        "resourcesPath": "/Custom/UI",
-        "lessPath": "/Custom/UI/Content/less",
-        "cssPath": "/Custom/UI/Content/css",
-        "mjmlPath": "/Custom/UI/Content/email/mjml",
-        "mjmlCompiledPath": "/Custom/UI/Content/email/html",
-        "tsPath": "/Custom/UI/Scripts/src",
-        "jsPath": "/Custom/UI/Scripts/dist"
-    },
     "devDependencies": {
         "awesome-typescript-loader": "^3.4.1",
         "babel-core": "^6.26.0",
@@ -27,24 +16,21 @@
         "babel-minify-webpack-plugin": "^0.2.0",
         "babel-preset-env": "^1.6.1",
         "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^4.0.0",
+        "gulp-autoprefixer": "^4.1.0",
         "gulp-cached": "^1.1.1",
-        "gulp-clean-css": "^3.9.0",
+        "gulp-clean-css": "^3.9.2",
         "gulp-combine-mq": "^0.4.0",
-        "gulp-connect": "^5.0.0",
+        "gulp-connect": "^5.2.0",
         "gulp-connect-ssi": "^0.4.0",
-        "gulp-filter": "^5.0.1",
-        "gulp-less": "^3.3.2",
+        "gulp-filter": "^5.1.0",
+        "gulp-less": "^3.4.0",
         "gulp-mjml": "^2.3.0",
-        "gulp-notify": "^3.0.0",
+        "gulp-notify": "^3.2.0",
         "gulp-pixrem": "^1.0.0",
-        "gulp-progeny": "^0.4.0",
+        "gulp-progeny": "^0.4.1",
         "gulp-rename": "^1.2.2",
         "http-server": "^0.10.0",
-        "typescript": "^2.6.2",
+        "typescript": "^2.7.1",
         "webpack": "^3.10.0"
-    },
-    "dependencies": {
-        "lodash": "^4.17.4"
     }
 }
